@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pack Z - Overlays Cinematográficos | +500 Efeitos Profissionais</title>
+    <meta name="description" content="Mais de 500 overlays cinematográficos para transformar seus vídeos em produções profissionais. Compatível com Premiere, After Effects, Final Cut e CapCut." />
+    <meta name="keywords" content="overlays, efeitos visuais, edição de vídeo, cinema, premiere pro, after effects, final cut, capcut" />
+    <meta property="og:title" content="Pack Z - Overlays Cinematográficos" />
+    <meta property="og:description" content="Transforme seus vídeos em produções de cinema com mais de 500 overlays profissionais" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Logo Fonts */
+      .font-orbitron {
+        font-family: 'Orbitron', monospace;
+      }
+      
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #00D9FF, #0066FF);
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(45deg, #00B8D4, #0052CC);
+      }
+      
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Custom animations */
+      @keyframes glow {
+        0%, 100% { box-shadow: 0 0 20px rgba(0, 217, 255, 0.3); }
+        50% { box-shadow: 0 0 30px rgba(0, 217, 255, 0.6); }
+      }
+      
+      .glow-animation {
+        animation: glow 2s ease-in-out infinite;
+      }
+      
+      /* Loading animation */
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      
+      .pulse-animation {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      
+      /* Enhanced bounce animation for CTA */
+      @keyframes enhanced-bounce {
+        0%, 20%, 53%, 80%, 100% {
+          transform: translate3d(0,0,0);
+        }
+        40%, 43% {
+          transform: translate3d(0,-8px,0);
+        }
+        70% {
+          transform: translate3d(0,-4px,0);
+        }
+        90% {
+          transform: translate3d(0,-2px,0);
+        }
+      }
+      
+      .animate-enhanced-bounce {
+        animation: enhanced-bounce 2s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
